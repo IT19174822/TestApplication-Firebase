@@ -4,16 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
         android:layout_marginBottom="480dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
         android:ems="10"
+        android:hint="Enter Your Email"
         android:inputType="textPersonName"
-        android:text="email"
+        android:textColor="#D31414"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
@@ -21,39 +24,60 @@
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="281dp"
-        android:layout_height="45dp"
+        android:layout_width="228dp"
+        android:layout_height="54dp"
         android:text="Login"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.651" />
 
     <TextView
         android:id="@+id/reg"
-        android:layout_width="225dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="200dp"
+        android:layout_width="221dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="164dp"
+        android:background="@android:color/holo_red_dark"
         android:text="SIGNUP HERE..."
+        android:textColor="#FBF1F1"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
         android:layout_marginTop="304dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
-        android:text="password"
+        android:textColor="#EC0A0A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="297dp"
+        android:layout_height="86dp"
+        android:text="LOGIN TO BLOOD-LIFE"
+        android:textColor="#FFEB3B"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
